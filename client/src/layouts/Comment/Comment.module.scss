@@ -1,0 +1,211 @@
+
+body {
+    font-family: "Roboto", sans-serif;
+  }
+.comment {
+    margin-top: 50px;
+}
+
+.form{
+}
+.titleComment {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contentBox {
+    height: 40px;
+}
+.avatar{
+    padding-top: 10px;
+}
+.avatarImg {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.InputComment {
+    flex: 1; 
+    height: 3rem; 
+    font-size: 1rem; 
+    color: white;
+    margin: 0 30px; 
+    background-color: transparent; 
+    border: none; 
+    border-bottom: 2px solid rgba(111, 117, 133, 0.1); 
+    outline: none; 
+    transition: border-bottom 0.3s;
+}
+
+.InputComment:focus {
+    border-bottom: 2px solid #2b71f5 ; 
+}
+
+.btnSend {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    background-color: #2b71f5 ;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 5px 20px;
+    border: none;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.iconSent {
+}
+
+.containComment {
+    margin-top: 30px;
+    transition: all ease 0.2s;
+}
+
+.commentItem {
+    display: flex;
+    margin-bottom: 20px;
+}
+.commentItem-wrap {
+    height: auto;
+    max-width: 63vw;
+    background-color: rgba(22, 24, 35, 0.06);
+    padding: 10px;
+    border-radius: 20px;
+    h2 {
+        font-size: 1.7rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    .contentComment {
+        font-size: 14px;
+    }
+    .closeBtn {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    float: right;
+    color: white;
+    background-color:rgb(16, 15, 15);
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: none;
+    &:hover {
+        opacity: 0.7;
+    }
+    } 
+
+    button{
+        margin: 10px 0px;
+    }
+    .editBtn {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+    
+        font-size: 15px;
+        float: right;
+        color: white;
+        background-color:#2b71f5;
+        padding: 5px 10px;
+        border-radius: 20px;
+        border: none;
+        &:hover {
+            opacity: 0.7;
+        }
+        } 
+}
+
+.timeComment {
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.timeAndEdited{
+    font-size: 12px;
+    color: #606060;
+}
+
+.iconOption { 
+    &:hover {
+        color: #2b71f5;
+    }
+}
+
+.ellipsisIcon {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.menu-popper {
+    margin-left: 150px;
+}
+
+.btn {
+    background-color: black;
+    color: #f1f1f1;
+    display: block;
+    font-size: 1rem;
+    padding: 10px 30px;
+    border: none;
+
+    background-color: transparent;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.textNote {
+    color: #f1f1f1;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    
+
+    a {
+        text-decoration: none;
+        color: #2b71f5;
+        &:hover {
+            color: #1a5bb0; 
+          }
+    }
+}
+
+
+.total-deleted-comment{
+    font-size: 12px;
+    color: #606060;
+    margin-left: 50px;
+
+}
+
+.total-comment{
+    font-size: 24px ;
+    font-weight: 500;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex   ;
+}
+
+.noMore {
+    font-size: 24px ;
+    font-weight: 500;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex   ;
+}
+
+.faOption{
+    margin-right: 10px;
+
+}

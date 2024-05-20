@@ -1,0 +1,145 @@
+.chat-bubble {
+  font-size: 30px;
+  position: fixed;
+  left: 15px;
+  bottom: 15px;
+  z-index: 9999;
+}
+
+strong{
+  margin-left: auto;
+  margin-right: auto;
+
+}
+    
+    .chat-icon {
+      background: #2b71f5;
+      color: white;
+      border-radius: 50%;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .closeBtn{
+      margin-right: 5px;
+      color: #f9f9f9;
+      cursor: pointer;
+      background: none;
+      border: none;
+      &:hover {
+        opacity: 0.7;
+
+      }
+    }
+    
+    .sent-icon{
+      margin-top: 15px;
+      color: #2b71f5;
+      font-size: 20px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      &:hover {
+        opacity: 0.7;
+
+      }
+    }
+    .chat-container {
+      display: flex;
+      flex-direction: column; 
+      height: 100%; 
+      width: 450px;
+      height: 300px;
+      background: #f9f9f9;
+      border: 2px solid rgb(224, 167, 167);
+      border-radius: 10px;
+      padding-bottom: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .chat-header {
+      padding: 5px 0px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background-color: black;
+      color: rgb(224, 167, 167);
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .chat-body {
+      margin-top: 20px;
+      color:black;
+      height: 150px;
+      overflow-y: auto;
+      height: calc(100% - 40px);
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    
+    .chat-footer {
+      margin-top: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .inputText{ 
+    font-size: 1rem; 
+    color: black;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 15px;
+    background-color: transparent; 
+    border: none; 
+    border-bottom: 2px solid rgba(49, 51, 58, 0.1); 
+    outline: none; 
+    transition: border-bottom 0.3s;
+    &:focus {
+      border-bottom: 2px solid #2b71f5 ; 
+    }
+
+    }
+    
+    
+    .chat-footer button {
+      padding: 5px 10px;
+    }
+    .message {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px; // Khoảng cách giữa các tin nhắn
+      margin-left: 10px; // Khoảng cách giữa các tin nhắn
+
+    }
+    
+    .sender {
+      font-size: 20px ;
+      margin-left: 5px;
+    font-weight: bold;// Tên người gửi được in đậm
+    }
+
+    .content {
+      margin-left: 10px;
+      font-size: 15px;
+
+    }
+    
+    .timesent {
+      margin-left: 10px;
+    font-size: 11px;
+    color: #a7a7a7;
+    }
+
+    .notification-dot {
+      position: absolute;
+      top: -3px; // Đặt trên cùng của bong bóng chat
+      right: -3px; // Đặt phía bên phải
+      width: 10px; // Kích thước dấu chấm đỏ
+      height: 10px;
+      border-radius: 50%; // Để thành hình tròn
+      background-color: red; // Màu đỏ
+    }
+
+    

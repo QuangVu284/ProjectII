@@ -1,0 +1,116 @@
+
+body {
+    font-family: "Roboto", sans-serif;
+  }
+
+  h2 {
+    margin-left: 60px;
+    font-weight: bold;
+    color: rgb(224, 167, 167);
+  }
+.watch-video-container {
+    display: flex;
+    background-color: #151515;
+    color: white;
+  }
+  
+  .video-and-comments {
+    flex: 3; /* Chiếm 3 phần của tổng không gian */
+    margin-left: 50px;
+  }
+  
+  .playlist-section {
+    flex: 1; /* Chiếm 1 phần */
+    padding-left: 30px; /* Để tạo khoảng cách giữa video và danh sách phát */
+  }
+  
+  .playlist {
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+    overflow-y: auto; /* Cho phép cuộn danh sách phát */
+  }
+  
+  .iframe{
+    margin: 60px 20px 20px 20px;
+    border-radius: 30px;
+  }
+  .titleAndDes{
+    margin: 20px 20px;
+    font-size: 20px;
+    line-height: 2rem;
+    font-weight: 700;
+   
+  }
+
+  .football-list-item {
+    margin-top: 30px;
+    position: relative;
+  }
+  
+
+  .football-list-item:hover .football-list-item-img {
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+  }
+  
+  .football-list-item:hover .football-list-item-title,
+  .football-list-item:hover .football-list-item-desc,
+  .football-list-item:hover .football-list-item-button {
+    opacity: 1;
+  }
+  
+  .football-list-item-img {
+    transition: all 1s ease-in-out;
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .football-list-item-title {
+    background-color: #333;
+    color: rgb(224, 167, 167);
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 40px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+    white-space: nowrap;
+  }
+  
+  .football-list-item-desc {
+    border-radius: 5px;
+
+    background-color: #333;
+    color: rgb(224, 167, 167);
+    padding: 10px;
+    font-size: 12px;
+    position: absolute;
+    top: 30%;
+    left: 40px;
+    width: 230px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+    
+  }
+  
+  .football-list-item-button {
+    padding: 10px;
+    background-color: #4dbf00;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+  }
